@@ -378,6 +378,13 @@ const App = () => {
       ),
       !steps.length && h("div", { class: "empty" }, "等待你的任务。简单描述后点击“拆解”。")
     ),
+    h("footer", { class: "footer" },
+      h("a", {
+        href: "https://github.com/volltin/make-progress",
+        target: "_blank",
+        rel: "noreferrer",
+      }, "Source: github.com/volltin/make-progress")
+    ),
     confetti.length > 0 && h(Celebration, { shots: confetti })
   );
 };
