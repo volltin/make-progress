@@ -1,0 +1,15 @@
+[project]
+name = "make-progress"
+version = "0.1.0"
+description = "A minimal task splitter."
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+  "fastapi",
+  "uvicorn[standard]",
+  "openai",
+  "python-dotenv",
+]
+
+[tool.uv]
+dev-dependencies = []
